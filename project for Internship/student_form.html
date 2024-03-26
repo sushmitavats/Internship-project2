@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <title>Crud Operation</title>
+    <link type="text/css" rel="stylesheet" href="student_form.css">
+</head>
+
+<body>
+  <h1>Student Enrollment Form</h1>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="name">
+                    </div>
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="text" name="email" id="email" placeholder="anc@gmail.com">
+                    </div>
+
+                    <div>
+                        <label for="phone">Phone No</label>
+                        <input type="number" name="phone" id="phone" placeholder="Write your personal phone no">
+                    </div>
+
+                    <div>
+                      <label for="skill">Skill</label>
+                      <input type="text" id="skill" placeholder="Write All the skills using comma">
+                      <!-- <br>
+                      <label><input type="checkbox" id="html">HTML</label>
+                      <label><input type="checkbox" id="css">Css</label>
+                      <label><input type="checkbox" id="jss">JavaScript</label> -->
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>E-Mail</th>
+                                <th>Phone No</th>
+                                <th>Skill</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./student_form.js"></script>
+</body>
+</html>
